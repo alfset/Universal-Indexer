@@ -1,0 +1,39 @@
+{
+  "tokens": [
+    {
+      "address": "0x5EBCdf1De1781e8B5D41c016B0574aD53E2F6E1A",
+      "symbol": "WPLANQ",
+      "decimals": 18
+    },
+    {
+      "address": "0x3C28a6Edc11746bf45c7fe0A2bCF95e27abc7bBa",
+      "symbol": "CNTO",
+      "decimals": 18
+    },
+    {
+      "address": "0xecEEEfCEE421D8062EF8d6b4D814efe4dc898265",
+      "symbol": "USDC",
+      "decimals": 6
+    },
+    {
+      "address": "0xfD6fF17b542260f95660BBD71470Fe6eEC72801D",
+      "symbol": "USDT",
+      "decimals": 18
+    },
+    {
+      "address": "0x75E20C5d4aade76143b8b74d1C5E2865347f9d3B",
+      "symbol": "USDC",
+      "decimals": 18
+    },
+    {
+      "address": "0x6aF48997671584672e084Bf2296473677598ee58",
+      "symbol": "DELTA",
+      "decimals": 18
+    },
+    {
+      "address": "0xC403e19036dc56B5698B8241D37C86FE87d57003",
+      "symbol": "PHYSICA",
+      "decimals": 18
+    }
+  ]
+}
