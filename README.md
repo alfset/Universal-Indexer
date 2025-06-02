@@ -79,8 +79,59 @@ This project is open-sourced under the [MIT License](#license). Contributions, f
 3. Create a feature branch (`git checkout -b feature-name`)
 4. Make your changes
 5. Submit a PR
-
 ---
+
+## 🛠 Adding Tokens for Indexing
+
+To include a new token in the indexing process, you need to register it under the appropriate chain configuration file located in:
+
+```
+
+/config/tokens/<chain>.js
+
+````
+
+### 🔧 Steps to Add a Token
+
+1. **Open the appropriate chain file**, e.g., `config/tokens/planq.json` or `config/tokens/planq.json`.
+
+2. **Add the token object** with the required information:
+### add tokens on chains
+```js
+{
+  ....
+  "tokens": [
+    {
+      "address": "0x5EBCdf1De1781e8B5D41c016B0574aD53E2F6E1A",
+      "symbol": "WPLANQ",
+      "decimals": 18
+    },
+  ]
+}
+````
+
+### 📘 adding Chains
+
+
+```js
+planq: {
+    chainId: 7070,
+    name: 'Planq',
+    rpcUrl: process.env.PLANQ_RPC_URL,
+    factoryAddress: process.env.PLANQ_FACTORY_ADDRESS || '',
+    tokenListPath: path.join(__dirname, 'tokens/planq.json'),
+    knownRouters: [
+      '0xasdsad', // Universal Router address
+    ],
+    fromBlock: 14859328,
+  },
+```
+
+> ✅ `fromBlock` defines from which block the indexer begins fetching swap data for that token, ensuring faster and efficient syncing.
+> ✅ `knownRouters` Known router defines for set known Universal Address if you have more Universal Router just add as Array.
+> ✅ `factoryAddress` Defines as Fatory Contract v3 work both for uniswap and physcia Finance
+
+
 
 ## 📃 License
 
@@ -109,3 +160,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
+
+---
+
+## ❤️ Built with love by Comunity Node
