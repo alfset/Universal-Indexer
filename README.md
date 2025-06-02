@@ -1,10 +1,4 @@
-Here is your complete `README.md` in plaintext markdown, along with an **MIT License** section that specifies *Physica Finance* as the open-source maintainer.
 
----
-
-### 📄 `README.md`
-
-````markdown
 # Physica Finance – Indexing API
 
 Welcome to the open-source **Indexing API** for Physica Finance, a robust backend solution designed to fetch, analyze, and serve decentralized swap data across multiple EVM-compatible blockchains. This API is built with Express.js and Supabase and supports real-time data queries for analytics, token volumes, user activity, and more.
